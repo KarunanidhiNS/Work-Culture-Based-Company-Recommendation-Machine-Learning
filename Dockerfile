@@ -1,8 +1,8 @@
 # Use an existing Docker image as a base
-FROM python:3.8
+FROM python:3.7
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /Work_Culture
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY src/ .
 
 # Command to run your application
-CMD ["python", "app.py"]
+CMD ["python", "Work_Culture.py"]
